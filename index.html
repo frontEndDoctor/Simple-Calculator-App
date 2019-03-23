@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>Calculator App</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<meta charset="utf-8">
+	<meta author="May">
+	<meta  width="device-width">
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+</head>
+<body>
+	<div ng-app='app' ng-controller="Maincontroller as main">
+		<script src="app.js"></script>
+		<label>
+			First Number:
+			<input type="number" ng-model="main.num1">
+		</label><br>
+		<label>
+			Second Number:
+			<input type="number" ng-model="main.num2" >
+		</label>
+		<vr>
+	<h1>Product:{{main.num1}} * {{main.num2}} = {{main.num1*main.num2}}</h1><br>
+	<h1>Sum:{{main.num1}} + {{main.num2}} ={{main.num1+main.num2}}</h1><br>
+	<h1>Division:{{main.num1}} / {{main.num2}}={{main.num1/main.num2}}</h1><br>
+	<h1>Square:{{main.num1}} * {{main.num1}}={{main.num1*main.num1}}</h1>
+		
+	</div>
+
+</body>
+</html>
